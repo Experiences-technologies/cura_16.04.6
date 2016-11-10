@@ -1,0 +1,24 @@
+Comment lancer un script python sur MacBook.
+
+Tout d'abord il faut intsaller Cura_15.04.6.dmg
+
+1.Copier coller le dossier script_cura_macbook sur votre bureau.
+
+2.Il faut ouvrir un terminal,
+il se trouve dans le dossier Autre qui est dans le launchpad.
+
+3.En ligne de commande il faut aller dans votre dossier script_cura_macbook
+il suffit de taper dans votre terminal la ligne suivante :
+cd Desktop/script_cura_macbook/
+
+4.Maintenant vous devez être dans votre dossier script_cura_macbook, pour en
+être sur vous pouvez taper dans votre terminal :
+ls
+cette commande permet de lister les documents de votre dossier,
+vous devez voir le fichier installation_cura.py
+Si vous ne le trouvez pas c'est que vous n'avez pas mis le dossier sur votre Bureau
+
+5.Il suffit plus que de lancer le script, pour cela taper dans votre terminal :
+python2.7 installation_cura.py
+
+6. Vous venez de lancer votre script vous pouvez maintenant deplacer votre dossier script_cura_macbook
