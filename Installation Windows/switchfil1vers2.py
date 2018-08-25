@@ -107,8 +107,8 @@ with open(filename, "w") as f:
 						f.write("G1 Z%f F1000\n" % (newZ))
 
 				#Move the head away
-				f.write("G1 X%f Y%f F9000\n" % (parkX, parkY))
-				f.write("G0 Y-%f\n" % (parkY-10))
+				f.write("G1 X%f Y%f F9000\n" % (parkX, parkY-10))
+				f.write("G0 Y%f\n" % (parkY))
 				f.write("G1 E9 F400\n")
 				f.write("G1 E-7F500\n")
 				f.write("G1 E4.5 F5000\n")
@@ -120,7 +120,7 @@ with open(filename, "w") as f:
 				f.write("G1 E3 F10000\n")
 				f.write("G1 E35 F200\n")
 				f.write("G1 E-%f F6000\n" % (retractAmount))
-				f.write("G1 Y195 F4000\n")
+				f.write("G1 Y%f F4000\n"% (parkY-10))
 
 				
 				#Move the head back. Move Z at the same time to prevent hitting the glass locks on the UM2
